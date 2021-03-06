@@ -1,0 +1,714 @@
+@font-face{
+    src: url(Fonts/DrukWide-Medium.ttf);
+    font-family: DrukWide;
+}
+
+html, body
+{
+    width: 100%;
+    height: 180%;
+    background-color:  black;
+}
+
+
+
+header{
+    /*height: 136px;*/
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+.desktop-mode
+{
+    display: none;
+}
+
+.mobile-mode
+{
+    display: contents;
+
+}
+
+.logo
+{
+    position: absolute;
+    left: 3%;
+    background: black;
+}
+
+.topnav {
+    overflow: hidden;
+    margin-left: 23%;
+    width: 77%;
+    height: 10%;
+}
+  
+.topnav a {
+    font-family:Krona One;
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 500;
+
+    float: left;
+    width: 9%;
+    color: white;
+    text-align: center;
+    padding: 0.8% 0.9%;
+    text-decoration: none;
+}
+
+.topnav a.link {
+    background-color: transparent;
+    color: #c2c2c2;
+}
+  
+.topnav a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+.topnav a.active {
+    background-color:transparent;
+    color: white;
+}
+
+.motocircle
+{
+    z-index: 4;
+    position: absolute;
+    width: 9.6%;
+    height: 6.5%;
+    left: 44%;
+    top: 18%;
+
+    background: black;
+}
+
+.gold
+{
+    z-index: 1;
+    position: absolute;
+    top: 0.1%;
+    right: 1%;
+    height: 31%;
+
+    width: 26%;
+    overflow: hidden;
+    
+}
+
+.motorcycle
+{
+    z-index: 2;
+    width: 54%;
+    position: absolute;
+    top: 10%;
+    left: 0px;
+}
+
+.wheel
+{
+    z-index: 3;
+    width:17%;
+    position: absolute;
+    top: 10%;
+    left: 63%;
+    background-image: radial-gradient(circle, transparent 2%,#060507);
+}
+
+.chinese1
+{
+    z-index: 5;
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    width: 42%;
+    overflow: hidden;
+}
+
+.chinese2
+{
+    z-index: 5;
+    position: absolute;
+    top: 60%;
+    left: 46.9%;
+    width: 41.8%;
+    overflow: hidden;
+}
+
+.sidestats
+{
+    z-index: 6;
+    position: absolute;
+    right: 0px;
+    top: 34.7%;
+    background-color: #060507;
+    width: 24.6%;
+    height: 55.6%;
+    
+
+}
+
+.sidebar
+{
+    z-index: 7;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.seat
+{
+    z-index: 7;
+    position: absolute;
+    bottom: 0%;
+    right: 24.6%;
+    width: 15.2%;
+
+}
+
+.bottom_div
+{
+    position: absolute;
+    bottom: 3%;
+    left: 4%;
+    width: 60%;
+    height: 6.7%;
+    display: flex;
+
+}
+
+.left_page
+{
+    font-family: Krona One;
+    margin-left: 2%;
+    font-size: 1vw;
+    color: white;
+}
+
+.right_page
+{  
+    font-family: Krona One;
+    position: relative;
+    left:6.65%;
+    font-size: 1vw;
+    color: white;
+}
+
+.onpage{
+    position: relative;
+    left:5.33%;
+    margin-top: 2.3%;
+    width:calc(1.5%*2);
+    height: 2px;
+    background-color: #a75b12;
+    z-index: 2;
+}
+.leftpage{
+    margin: 2.3% 0px 0 3.5%;
+    z-index: 1;
+    width: 15%;
+    height: 2px;
+    background-color: white;
+}
+
+.info_container
+{
+    position: relative;
+    width: 35%;
+    height: 45%;
+    left: 18.8%;
+    top: 3%;
+
+    display: flex;
+    
+}
+
+.bike_info
+{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.6vw;
+    line-height: 200%;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    word-wrap: break-word;
+
+}
+
+
+.black_background
+{
+    position: absolute;
+    right: 1%;
+    bottom: 0%;
+    width: 22.54%;
+    height: 70%;
+    z-index: 7;
+    background-color: #060507;
+
+}
+
+aside
+{
+    position: absolute;
+    top: 33%;
+    right: 0;
+    width: 25%;
+    height: 40%;
+    z-index: 8;
+}
+
+.sidestats{
+    position: relative;
+    background-color: #060507;
+    width: 80%;   
+    height: 5%;
+    top: 3%;
+    left: 20%;
+    color: white;
+}
+
+.stats-mid{
+    width: 70%;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+
+    font-family: DrukWide;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    }
+    
+.stats-small{
+    width: 184px;
+    height: 12px;
+    
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.65vw;
+    line-height: 2vw;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    }
+
+.stats-vertical{
+    position: absolute;
+    top: 100%;
+    margin: 7% 25% 2%;
+    right: 60%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 48px;
+    text-align: center;
+    width: 40%;
+    height: 30px;
+
+    color: #3F3E44;
+
+    transform: rotate(-90deg);
+    }
+
+
+/*-------------------------------------------------------------------------*/
+/*Mobile CSS*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+.logo-mobile
+{
+
+    position: relative;
+    width: 85%;
+    padding: 5% 2% 5% 10%;
+
+}
+  
+.main_container
+{
+  width: 99%;
+  align-content: center;
+  text-align: center;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+  
+.motorpart
+{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px 20px 0px;
+  overflow: hidden;
+}
+  
+.MOTORCYCLE
+{
+    width: 100%;
+    position: relative;
+    left: 35%;
+    top: -4%;
+}
+  
+.text-main
+{
+    margin: 5%;
+    padding-right: 10%;
+    width: 80%;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+  
+}
+
+.text
+{
+    margin-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    color: white;
+    
+    text-align: left;
+    position: relative;
+    top: 5px;
+    font-family: Montserrat;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 4vw;
+    letter-spacing: 0em;
+  
+}
+
+.text_down
+{
+    margin-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    color: white;
+    
+    text-align: left;
+    position: relative;
+    top: 5px;
+    font-family: Montserrat;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 4vw;
+    letter-spacing: 0em;
+  
+}
+  
+.motorpart-chinese
+{
+    position: absolute;
+    top: 180%;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 20px 0px;
+    overflow: hidden;
+}
+
+.stat-container
+{
+    width: 100%;
+    display: flex;
+    margin: 5% 0% 5% 0%;
+    position: relative;
+    left: 10%;
+    top: 60%;
+}
+
+.statbar
+{
+    margin: 15% 3% 5% 0%;
+    z-index: 6;
+    position: relative;
+    left: 0%;
+    top: 55%;
+    background-color: black;
+    width: 50%;
+    height: 50%;
+}
+
+.mobile-bottom_div
+{
+    position: absolute;
+    display:flex;
+    margin-left: 0%;
+    bottom: 0px;
+    top: 245%;
+    left: 30%;
+    width: 80%;
+    height: 20%;
+
+
+}
+
+.mobile-left_page
+{   
+    width: 10%;
+    margin-top: 1%;
+    display:inline-block;
+    font-family: Krona One;
+    position: absolute;
+    left: 12%;
+    margin-left: 2%;
+    margin-top: 5%;
+    color: white;
+}
+
+.mobile-right_page
+{
+    width: 10%;
+    display:inline-block;
+    font-family: Krona One;
+    position: absolute;
+    left: 78%;
+    margin-top: 35px;
+    color: white;
+}
+
+.mobile-onpage
+{
+
+    display:inline-block;
+    position: absolute;
+    left:28%;
+    margin-top: 6%;
+    width:calc(4%*5);
+    height: 3px;
+    background-color: #a75b12;
+    z-index: 2;
+}
+
+.mobile-leftpage
+{
+    position: absolute;
+    left:28%;
+    margin-top: 6%;
+    z-index: 1;
+    width:  40%;
+    height: 3px;
+    background-color: white;
+}
+
+.buy-container
+{
+    display: flex;
+    position: relative;
+    width: 70%;
+    top: 3%;
+    left: 5%;
+    
+
+}
+
+
+.buy-container img
+{
+    margin: 10%;
+}
+
+/*Default Desktop size - 1920px*/
+
+@media only screen and (min-width: 320px)
+{
+    html, body
+    {
+        height: 155%;
+    }
+    .motorpart-chinese 
+    {
+        position: absolute;
+        top: 135%;
+    }
+}
+
+@media only screen and (min-width: 375px)
+{
+    html, body
+    {
+        height: 165%;
+    }
+    .motorpart-chinese 
+    {
+        position: absolute;
+        top: 145%;
+    }
+}
+
+@media only screen and (min-width: 425px)
+{
+    html, body
+    {
+        height: 170%;
+    }
+    .motorpart-chinese 
+    {
+        position: absolute;
+        top: 150%;
+    }
+
+}
+
+@media only screen and (min-width: 500px)
+{
+    .motorpart-chinese 
+    {
+        position: absolute;
+        top: 170%;
+    }
+}
+
+@media only screen and (min-width: 550px)
+{
+    .motorpart-chinese 
+    {
+        position: absolute;
+        top: 175%;
+    }
+}
+
+@media only screen and (min-width: 650px)
+{
+    .motorpart-chinese 
+    {
+        position: absolute;
+        top: 190%;
+    }
+}
+
+@media only screen and (min-width: 700px)
+{
+    .motorpart-chinese 
+    {
+        position: absolute;
+        top: 200%;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    html, body
+    {
+        height: 180%;
+    }
+    .motorpart-chinese {
+        position: absolute;
+        top: 215%;
+    }
+    .text_down
+    {
+        margin-left: 10%;
+        padding-right: 0%;
+    }
+}
+
+@media only screen and (min-width: 800px)
+{
+    
+    .motorpart-chinese {
+        position: absolute;
+        top: 220%;
+    }
+    
+}
+
+@media only screen and (min-width: 850px)
+{
+    
+    .motorpart-chinese {
+        position: absolute;
+        top: 230%;
+    }
+    
+}
+
+@media only screen and (min-width: 900px)
+{
+    
+    .motorpart-chinese {
+        position: absolute;
+        top: 240%;
+    }
+    
+}
+
+@media only screen and (min-width: 950px)
+{
+    
+    .motorpart-chinese {
+        position: absolute;
+        top: 250%;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px)
+{
+    .desktop-mode
+    {
+        display: contents;
+    }
+    .mobile-mode
+    {
+        display: none;
+    }
+    body
+    {
+        height: 95%;
+        width: 99%;
+        background-color: #060507;
+    }
+    html
+    {
+        height: 100%;
+        width: 99%;
+        background-color: #060507;
+    }
+}
